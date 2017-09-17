@@ -42,11 +42,18 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="chaptor5\Account.cs" />
+    <Compile Include="chaptor6\DefineArray.cs" />
+    <Compile Include="chaptor6\People.cs" />
+    <Compile Include="chaptor6\Person.cs" />
+    <Compile Include="PublicClass\Enums.cs" />
+    <Compile Include="PublicClass\Interface.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
