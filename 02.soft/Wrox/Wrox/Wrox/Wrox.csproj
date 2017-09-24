@@ -42,6 +42,8 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="chaptor10\EmployTd.cs" />
+    <Compile Include="chaptor10\Generics.cs" />
     <Compile Include="chaptor5\Account.cs" />
     <Compile Include="chaptor6\DefineArray.cs" />
     <Compile Include="chaptor6\People.cs" />

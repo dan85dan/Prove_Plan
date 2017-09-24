@@ -170,11 +170,50 @@ namespace Wrox.chaptor6
             }
         }
 
+        public static void DisplayArrays(object[] arrs)
+        {
+            foreach(object arr in arrs)
+            {
+                Console.WriteLine(arr.ToString());
+            }
+        }
 
+        public static void DoDisplay()
+        {
+            People[] peoples = {
+                new People("Hint","Ada"),
+                new People("Black","Lily")
+            };
 
+            DisplayArrays(peoples);
+        }
 
+        public static int CalSum(ArraySegment<int>[] segments)
+        {
+            int sum = 0;
+            foreach(ArraySegment<int> seg in segments)
+            {
+                for(int i = seg.Offset;i < seg.Offset + seg.Count;i++)
+                {
+                    sum += seg.Array[i];
+                }
+            }
+            return sum;
+        }
 
+        public static void DoSum()
+        {
+            int[] arr1 = { 1, 2, 3, 4, 5, 5 };
+            int[] arr2 = { 4, 3, 6, 2, 7, 3, 2 };
+            ArraySegment<int>[] segments = {
+                new ArraySegment<int>(arr1,1,4),
+                new ArraySegment<int>(arr2,3,2)
+            };
 
+            int sum = CalSum(segments);
+            Console.WriteLine(sum);
+        }
+             
 
 
     }
